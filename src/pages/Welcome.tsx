@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ParticleBackground from "@/components/ParticleBackground";
 import { Github, Chrome, Code2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
@@ -11,6 +12,7 @@ const Welcome = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
+      <ParticleBackground />
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse-glow"></div>
