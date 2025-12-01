@@ -38,8 +38,9 @@ const Welcome = () => {
         <div className="space-y-4">
           <Button 
             onClick={handleGetStarted}
-            className="w-full h-14 text-lg font-bold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 glow-primary transition-all duration-300"
+            variant="glow"
             size="lg"
+            className="w-full h-14 text-lg font-bold"
           >
             Get Started
           </Button>
@@ -57,26 +58,26 @@ const Welcome = () => {
           <div className="space-y-3">
             <Button 
               variant="outline" 
-              className="w-full h-12 border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
+              className="w-full h-12 border-border hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all duration-300 group"
               onClick={handleGetStarted}
             >
-              <Github className="w-5 h-5 mr-2" />
+              <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
               Continue with GitHub
             </Button>
             <Button 
               variant="outline" 
-              className="w-full h-12 border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
+              className="w-full h-12 border-border hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all duration-300 group"
               onClick={handleGetStarted}
             >
-              <Chrome className="w-5 h-5 mr-2" />
+              <Chrome className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
               Continue with Google
             </Button>
             <Button 
               variant="outline" 
-              className="w-full h-12 border-border hover:border-primary hover:bg-primary/5 transition-all duration-300"
+              className="w-full h-12 border-border hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_30px_hsl(var(--primary)/0.2)] transition-all duration-300 group"
               onClick={handleGetStarted}
             >
-              <Code2 className="w-5 h-5 mr-2" />
+              <Code2 className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
               Continue with LeetCode
             </Button>
           </div>
