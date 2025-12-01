@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import ParticleBackground from "@/components/ParticleBackground";
 import { User, Users, UserPlus, Flame, Trophy, Lock } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { getUserProgress } from "@/lib/storage";
@@ -31,8 +32,9 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="min-h-screen p-6 pb-24">
-      <div className="max-w-2xl mx-auto space-y-6 animate-fade-in">
+    <div className="min-h-screen p-6 pb-24 relative">
+      <ParticleBackground />
+      <div className="max-w-2xl mx-auto space-y-6 animate-fade-in relative z-10">
         {/* Header with stats */}
         <div className="flex items-center justify-between">
           <div>
